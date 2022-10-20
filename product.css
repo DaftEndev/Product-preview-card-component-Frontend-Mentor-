@@ -44,6 +44,11 @@ section
     width: 325px;
 }
 
+#imagemobile
+{
+    display: none;
+}
+
 #sectiontext
 {
     padding: 30px;
@@ -64,11 +69,12 @@ h1
     font-size: 2.6em;
     line-height: 100%;
     margin: 0 0 25px 0;
+    width: 240px;
 }
 
 #description
 {
-    width: 240px;
+    width: 94%;
     line-height: 150%;
 }
 
@@ -100,9 +106,9 @@ h1
     color: white;
     text-align: center;
     padding: 17px;
-    padding-left: 40px;
     border-radius: 8px;
     font-family: montserrat-bold, serif;
+    width: 87%;
 }
 
 #add:hover
@@ -132,4 +138,40 @@ h1
 .attribution a:hover
 {
     color: hsl(158, 36%, 37%);
+}
+
+@media screen and (max-width: 650px)
+{
+    main
+    {
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    h1
+    {
+        width: 100%;
+        font-size: 2.3em;
+        margin: 0 0 18px 0;
+    }
+
+    section
+    {
+        margin: 0 2px 0 2px;
+        width: auto;
+        height: 100%;
+    }
+
+    #imagedesktop
+    {
+        display: none;
+    }
+
+    #imagemobile
+    {
+        display: block;
+        width: 100%;
+    }
 }
